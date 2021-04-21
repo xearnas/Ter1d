@@ -1,0 +1,45 @@
+# Dimension of the mesh
+mesh_name
+Mesh1D
+
+# Mesh source (For 2D +)
+mesh_root
+Test.mesh
+
+# Numerical flux choice: Rusanov, LaxF
+numerical_flux
+Rusanov
+
+# Time parameters
+tmin
+0
+tmax
+2.0
+
+#Space parameters
+xmin
+-5
+xmax
+5
+dx
+0.1
+
+# Choice between: Barreer
+which_scenario
+Barreer
+
+# Time scheme: Explicit
+scheme
+Explicit
+
+# Pensanteur
+g
+9.81
+
+# Results folder
+results
+Results/1d/
+
+#Boundary condition a implementer !!
+
+# Test scenario
