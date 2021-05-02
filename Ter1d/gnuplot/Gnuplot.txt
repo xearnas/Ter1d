@@ -1,0 +1,22 @@
+set xrange [-5:5]
+set yrange [-5:5]
+set zrange [0:20]
+imax=169
+i=2
+load 'C:\Users\Simon\Documents\GitHub\Ter1d\gnuplot\script2d.gnu'
+      printf("flux(%d,0) = %f car theta = %f\n", i,Fluxordre1(0,0) + _fct->phi(theta)(0) * (Fluxordre2(0,0) - Fluxordre1(0,0)),_fct->phi(theta)(0));
+      exit(0);
+
+set xrange [-5:5]
+set yrange [1:2]
+imax=227
+i=2
+load 'C:\Users\Simon\Documents\GitHub\Ter1d\gnuplot\script1d.gnu'
+
+set xrange [-5:5]
+set yrange [1:2]
+plot 'C:\Users\Simon\Documents\GitHub\Ter1d\Results\1d\h.txt' using 1:2 w lp ,'C:\Users\Simon\Documents\GitHub\Ter1d\Results\1d\h.txt' using 1:114 w lp ,'C:\Users\Simon\Documents\GitHub\Ter1d\Results\1d\h.txt' using 1:227 w lp 
+
+
+
+
